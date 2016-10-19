@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Павел Зыков](https://up.htmlacademy.ru/htmlcss/15/user/209757).
-* Наставник: [Макс "Анатолий" Масленко](https://htmlacademy.ru/profile/id107049).
+* Наставник: [Макс Масленко](https://htmlacademy.ru/profile/id107049).
 
 ---
 
