@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -16,6 +16,81 @@
           </ul>
         </nav>
     </header>
+    <main>
+      <div class="clearfix">
+        <div class="filters">
+          <div class="infrastructure">
+            <h2 class="title-secodary">Инфраструктура:</h2>
+
+            <input class="filter" type="checkbox" name="pool" id="pool" checked>
+            <label for="pool">Бассейн</label>
+
+            <input class="filter" type="checkbox" name="parking" id="parking">
+            <label for="parking">Парковка</label>
+
+            <input class="filter" type="checkbox" name="wifi" id="wifi">
+            <label for="wifi">Wi-Fi</label>
+          </div>
+          <div class="house-type">
+            <h2 class="title-secodary">Тип жилья:</h2>
+
+            <input class="filter" type="checkbox" name="hotel" id="hotel" checked>
+            <label for="hotel">Гостиница</label>
+
+            <input class="filter" type="checkbox" name="hotel" id="motel" checked>
+            <label for="motel">Мотель</label>
+
+            <input class="filter" type="checkbox" name="apartaments" id="apartaments" checked>
+            <label for="apartaments">Апартаменты</label>
+          </div>
+          <div class="cost-range">
+            <h2 class="title-secodary">Стоимость в сутки (Р):</h2>
+            <output name="cost-min"></output>
+            <output name="cost-max"></output>
+            <input type="range" name="range" min="0" max="5000" value="3000">
+            <button class="btn">Показать</button>
+          </div>
+        </div>
+        <div class="sorters">
+          <b>Найдено: 3</b>
+          <span>Сортировка:</span>
+          <button class="sorter" value="price">По цене</button>
+          <button class="sorter" value="type">По типу</button>
+          <button class="sorter" value="rating">По рейтингу</button>
+          <button class="sorter" value="up"></button>
+          <button class="sorter" value="down"></button>
+        </div>
+        <div class="house-list">
+          <article class="house-article">
+            <img src="img/amara-resort.jpg" width="135" height="90" alt="Amara Resort & SPA">
+            <span class="house-info">Гостиница</span>
+            <span class="house-info">От 3500 Р.</span>
+            <a class="more" href="#">Подробнее</a>
+            <a class="book" href="#">Забронировать</a>
+            <span class="house-stars">&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="house-rait">Рейтинг 8,5</span>
+          </article>
+          <article class="house-article">
+            <img src="img/desert-quail-inn.jpg" width="135" height="90" alt="Desert Quail Inn">
+            <span class="house-info">Мотель</span>
+            <span class="house-info">От 2000 Р.</span>
+            <a class="more" href="#">Подробнее</a>
+            <a class="book" href="#">Забронировать</a>
+            <span class="house-stars">&#9733;&#9733;</span>
+            <span class="house-rait">Рейтинг 8,9</span>
+          </article>
+          <article class="house-article">
+            <img src="img/villas-at-poco-diablo.jpg" width="135" height="90" alt="Villas At Poco Diablo">
+            <span class="house-info">Апартаменты</span>
+            <span class="house-info">От 4000 Р.</span>
+            <a class="more" href="#">Подробнее</a>
+            <a class="book" href="#">Забронировать</a>
+            <span class="house-stars">&#9733;&#9733;&#9733;</span>
+            <span class="house-rait">Рейтинг 9,2</span>
+          </article>
+        </div>
+      </div>
+    </main>
     <footer class="main-footer">
       <div class="container">
         <section class="footer-hashtag">
