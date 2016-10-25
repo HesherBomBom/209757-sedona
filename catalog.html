@@ -17,48 +17,47 @@
         </nav>
     </header>
     <main>
-      <div class="clearfix">
-        <div class="filters">
-          <div class="infrastructure">
-            <h2 class="title-secodary">Инфраструктура:</h2>
+      <form class="clearfix hotels-form" action="#" method="get">
+        <fieldset class="amenities">
+          <h2 class="title-secondary">Инфраструктура:</h2>
 
             <input class="filter" type="checkbox" name="pool" id="pool" checked>
-            <label for="pool">Бассейн</label>
+            <legend for="pool">Бассейн</legend>
 
             <input class="filter" type="checkbox" name="parking" id="parking">
-            <label for="parking">Парковка</label>
+            <legend for="parking">Парковка</legend>
 
             <input class="filter" type="checkbox" name="wifi" id="wifi">
-            <label for="wifi">Wi-Fi</label>
-          </div>
-          <div class="house-type">
+            <legend for="wifi">Wi-Fi</legend>
+          </fieldset>
+          <fieldset class="accomondation-type">
             <h2 class="title-secodary">Тип жилья:</h2>
 
             <input class="filter" type="checkbox" name="hotel" id="hotel" checked>
-            <label for="hotel">Гостиница</label>
+            <legend for="hotel">Гостиница</legend>
 
             <input class="filter" type="checkbox" name="hotel" id="motel" checked>
-            <label for="motel">Мотель</label>
+            <legend for="motel">Мотель</legend>
 
             <input class="filter" type="checkbox" name="apartaments" id="apartaments" checked>
-            <label for="apartaments">Апартаменты</label>
-          </div>
-          <div class="cost-range">
+            <legend for="apartaments">Апартаменты</legend>
+          </fieldset>
+          <fieldset class="price-range">
             <h2 class="title-secodary">Стоимость в сутки (Р):</h2>
-            <output name="cost-min"></output>
-            <output name="cost-max"></output>
+            <span name="cost-min"></span>
+            <span name="cost-max"></span>
             <input type="range" name="range" min="0" max="5000" value="3000">
-            <button class="btn">Показать</button>
-          </div>
-        </div>
+            <button type="submit" class="btn">Показать</button>
+          </fieldset>
+        </form>
         <div class="sorters">
           <b>Найдено: 3</b>
           <span>Сортировка:</span>
           <button class="sorter" value="price">По цене</button>
           <button class="sorter" value="type">По типу</button>
           <button class="sorter" value="rating">По рейтингу</button>
-          <button class="sorter" value="up"></button>
-          <button class="sorter" value="down"></button>
+          <button class="sorter" value="up">▲</button>
+          <button class="sorter" value="down">▼</button>
         </div>
         <div class="house-list">
           <article class="house-article">
@@ -68,7 +67,7 @@
             <a class="more" href="#">Подробнее</a>
             <a class="book" href="#">Забронировать</a>
             <span class="house-stars">&#9733;&#9733;&#9733;&#9733;</span>
-            <span class="house-rait">Рейтинг 8,5</span>
+            <span class="hotel-rating">Рейтинг 8,5</span>
           </article>
           <article class="house-article">
             <img src="img/desert-quail-inn.jpg" width="135" height="90" alt="Desert Quail Inn">
@@ -77,7 +76,7 @@
             <a class="more" href="#">Подробнее</a>
             <a class="book" href="#">Забронировать</a>
             <span class="house-stars">&#9733;&#9733;</span>
-            <span class="house-rait">Рейтинг 8,9</span>
+            <span class="hotel-rating">Рейтинг 8,9</span>
           </article>
           <article class="house-article">
             <img src="img/villas-at-poco-diablo.jpg" width="135" height="90" alt="Villas At Poco Diablo">
@@ -86,10 +85,9 @@
             <a class="more" href="#">Подробнее</a>
             <a class="book" href="#">Забронировать</a>
             <span class="house-stars">&#9733;&#9733;&#9733;</span>
-            <span class="house-rait">Рейтинг 9,2</span>
+            <span class="hotel-rating">Рейтинг 9,2</span>
           </article>
         </div>
-      </div>
     </main>
     <footer class="main-footer">
       <div class="container">
