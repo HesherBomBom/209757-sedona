@@ -7,7 +7,7 @@
   <body>
     <header class="main-header">
         <nav class="main-navigation">
-          <a><img src="img/logo.jpg" alt="Логотип Седоны"></a>
+          <img class="logo" src="img/logo.jpg" alt="Логотип Седоны">
           <ul>
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
@@ -77,26 +77,30 @@
         <h2 class="title-secondary">Заинтересовались?</h2>
         <span class="subtitle">Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</span>
         <button class="search-btn">Поиск гостиницы в Седоне</button>
-        <form class="search-form" action="#" method="get">
-          <fieldset>
-            <span class="date">Дата заезда:</span>
-            <span class="date">24 апреля 2016</span>
-            <span class="date">Дата выезда:</span>
-            <span class="date">4 4 июля 2016</span>
-            <div class="adult">
+        <form class="search-form" action="?" method="get">
+          <fieldset class="date">
+            <legend>Дата заезда:</legend>
+            <input type="text">
+          </fieldset>
+          <fieldset class="date">
+            <legend">Дата выезда:</legend>
+            <input type="text">
+          </fieldset>
+          <div class="clearfix">
+            <fieldset class="adult">
               <legend>Взрослые:</legend>
               <input type="button" name="adult-less" value="&minus;">
               <output name="adults"></output>
               <input type="button" name="adult-more" value="+">
-            </div>
-            <div class="child">
+            </fieldset>
+            <fieldset class="child">
               <legend>Дети:</legend>
               <input type="button" name="child-less" value="&minus;">
               <output name="children"></output>
               <input type="button" name="child-more" value="+">
-            </div>
-            <button type="submit" class="btn">Найти</button>
-          </fieldset>
+            </fieldset>
+           </div>
+          <button type="submit" class="btn">Найти</button>
         </form>
         <img src="img/map.jpg" width="1720" height="750" alt="Карта">
       </div>
