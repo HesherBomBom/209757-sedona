@@ -12,35 +12,35 @@
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
             <li><a href="#">Карта штата</a></li>
-            <li><a href="#">Гостиницы</a></li>
+            <li><a href="hotels.html">Гостиницы</a></li>
           </ul>
         </nav>
     </header>
     <main>
       <form class="clearfix hotels-form" action="#" method="get">
         <fieldset class="amenities">
-          <h2 class="title-secondary">Инфраструктура:</h2>
+          <legend class="title-secondary">Инфраструктура:</legend>
 
             <input class="filter" type="checkbox" name="pool" id="pool" checked>
-            <legend for="pool">Бассейн</legend>
+            <label for="pool">Бассейн</label>
 
             <input class="filter" type="checkbox" name="parking" id="parking">
-            <legend for="parking">Парковка</legend>
+            <label for="parking">Парковка</label>
 
-            <input class="filter" type="checkbox" name="wifi" id="wifi">
-            <legend for="wifi">Wi-Fi</legend>
+            <input class="filter" type="checkbox" name="wifi" id="wifi">label
+            <label for="wifi">Wi-Fi</label>
           </fieldset>
           <fieldset class="accomondation-type">
-            <h2 class="title-secodary">Тип жилья:</h2>
+            <legend class="title-secodary">Тип жилья:</legend>
 
             <input class="filter" type="checkbox" name="hotel" id="hotel" checked>
-            <legend for="hotel">Гостиница</legend>
+            <label for="hotel">Гостиница</label>
 
             <input class="filter" type="checkbox" name="hotel" id="motel" checked>
-            <legend for="motel">Мотель</legend>
+            <label for="motel">Мотель</label>
 
-            <input class="filter" type="checkbox" name="apartaments" id="apartaments" checked>
-            <legend for="apartaments">Апартаменты</legend>
+            <input class="filter" type="checkbox" name="apartments" id="apartments" checked>
+            <label for="apartments">Апартаменты</label>
           </fieldset>
           <fieldset class="price-range">
             <h2 class="title-secodary">Стоимость в сутки (Р):</h2>
@@ -53,20 +53,20 @@
         <div class="sorters">
           <b>Найдено: 3</b>
           <span>Сортировка:</span>
-          <button class="sorter" value="price">По цене</button>
-          <button class="sorter" value="type">По типу</button>
-          <button class="sorter" value="rating">По рейтингу</button>
-          <button class="sorter" value="up">▲</button>
-          <button class="sorter" value="down">▼</button>
+          <button class="sorter" id="price-sorter">По цене</button>
+          <button class="sorter" id="type-sorter">По типу</button>
+          <button class="sorter" id="rating-sorter">По рейтингу</button>
+          <button class="sorter" id="up-sorter">▲</button>
+          <button class="sorter" id="down-sorter">▼</button>
         </div>
         <table class="search-results">
           <tbody>
             <tr class="hotel-row">
               <td class="hotel-pic">
-                <img src="//placehold.it/150x100" alt="Amara Resort & SPA">
+                <img src="//placehold.it/150x100" alt="Amara Resort &amp; SPA">
               </td>
               <td class="hotel-content">
-                <h3>Amara Resort & SPA</h3>
+                <h3>Amara Resort &amp; SPA</h3>
                 <button class="more">Подробнее</button><button class="book">Забронировать</button>
               </td>
               <td class="ratings">
