@@ -7,6 +7,7 @@
   </head>
   <body>
     <header class="main-header">
+      <div class="container">
         <nav class="main-navigation">
           <img class="logo" src="img/logo.png" alt="Логотип Седоны">
           <ul>
@@ -16,22 +17,25 @@
             <li><a href="hotels.html">Гостиницы</a></li>
           </ul>
         </nav>
+      </div>
     </header>
-    <main>
+    <main class="container">
       <div class="intro">
         <!-- <img src="img/background.jpg" width="1200" height="564" alt="background photo"> -->
         <img src="img/welcome.png"  width="458" height="352" alt="Welcome to the gorgeous">
       </div>
-      <div class="content">
+      <div class="content clearfix">
         <h2 class="title-secondary">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
         <span class="subtitle">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</span>
-        <div class="reason">
-          <b class="reason-title">Настоящий городок</b>
-          <span class="reason-nmb">№1</span>
-          <p class="reason-text">Седона &mdash; не аттракцион для туристов, там течет своя жизнь</p>
-          <img src="img/city.jpg" width="800" height="255" alt="Седона">
-        </div>
-        <div class="features">
+        <section class="clearfix">
+          <div class="first-reason-with-img">
+            <b class="reason-title">Настоящий городок</b>
+            <span class="reason-nmb">№1</span>
+            <p class="reason-text">Седона &mdash; не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
+          <img class="first-reason-img" src="img/city.jpg" width="800" height="255" alt="Седона">
+        </section>
+        <div class="features clearfix">
           <div>
             <img src="img/house.png" width="75" height="72" alt="Жилье">
             <b class="feature">Жилье</b>
@@ -48,11 +52,13 @@
             <p class="feature-text">Не только китайского, но и местного производства!</p>
           </div>
         </div>
-        <section class="reason">
-          <b class="reason-title">Там есть Мост Дьявола</b>
-          <img src="img/bridge.jpg" width="800" height="255" alt="Каньон Седоны">
-          <span class="reason-nmb">№2</span>
-          <p class="reason-text">Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
+        <section class="clearfix">
+          <img class="second-reason-img" src="img/bridge.jpg" width="800" height="255" alt="Каньон Седоны">
+          <div class="second-reason-with-img">
+            <b class="reason-title">Там есть Мост Дьявола</b>          
+            <span class="reason-nmb">№2</span>
+            <p class="reason-text">Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
+          </div>
         </section>
         <section class="reason">
           <b class="reason-title">Небольшая площадь</b>
@@ -72,7 +78,8 @@
       </div>
       <div class="search">
         <h2 class="title-secondary">Заинтересовались?</h2>
-        <span class="subtitle">Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</span>
+        <span class="subtitle">Укажите предполагаемые даты поездки, </span>
+        <span class="subtitle">и мы покажем Вам лучшие предложения гостиниц в Седоне</span>
         <h3 class="modal-header">Поиск отелей в Седоне</h3>
         <form class="search-form" action="?" method="post">
           <div class="form-group">
@@ -85,7 +92,6 @@
             <input id="checkout-date" type="text">
             <i class="icon icon-calendar"></i>
           </div>
-          
           <div class="clearfix">
             <div class="form-group">
               <label for="adults-number">Взрослые:</label>
@@ -110,9 +116,9 @@
       </div>
     </main>
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <section class="footer-hashtag">
-          #visitSEDONA
+          <b>#visitSEDONA</b>
         </section>
         <section class="footer-social">
           <a href="#"><img src="img/tw.jpg" width="46" height="48" alt="Twitter"></a>
@@ -120,8 +126,9 @@
           <a href="#"><img src="img/yt.jpg" width="46" height="48" alt="YouTube"></a>
         </section>
         <section class="footer-copyright">
-          <p>Website by</p>
+          
           <a href="https://htmlacademy.ru"><img src="img/html-logo.png" width="113" height="39" alt="Логотип HTML Academy"></a>
+          <p>Website by</p>
         </section>
       </div>
     </footer>
