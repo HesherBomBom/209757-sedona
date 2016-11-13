@@ -3,7 +3,6 @@
 }
 
 body {
-  min-width: 1200px;
   font-family: "PT Sans", Tahoma, sans-serif;
   text-transform: uppercase;
   font-size: 14px;
@@ -23,8 +22,17 @@ h2, h3, .main-title {
   clear: both;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.main-navigation li {
+  display: inline-block;
+  width: 20%;
+  outline: 1px dotted red;
+}
+
 .container {
-  box-sizing: border-box;
   width: 1200px;
   margin: 0 auto;
   outline: 1px dotted red;
@@ -38,13 +46,11 @@ h2, h3, .main-title {
 }
 
 .main-header {
-  height: 55px;
   margin-bottom: 75px;
 }
 
 .intro {
   width: 460px;
-  height: 350px;
   margin: 0 auto 120px;
 }
 
@@ -61,16 +67,51 @@ h2, h3, .main-title {
   text-align: center;
 }
 
-.first-reason-with-img {
-  float: left;
-  height: 255px;
+.first-reason-with-img,
+.first-reason-img,
+.features div,
+.second-reason-img,
+.second-reason-with-img,
+.reason {
+  display: inline-block;
+}
+
+.first-reason-img,
+.second-reason-img {
+  width: 66%;
+}
+
+.features div,
+.first-reason-with-img,
+.second-reason-with-img,
+.reason {
+  width: 33%
+}
+
+/*.first-reason-with-img,
+.second-reason-with-img {
   width: 400px;
+}
+
+.first-reason-witn-img {
+  float: left;
+}
+
+.second-reason-with-img {
+  float: right;
+}
+
+.first-reason-img,
+.second-reason-img {
+  width: 800px;
 }
 
 .first-reason-img {
   float: right;
-  width: 800px;
-  height: 255px;
+}
+
+.second-reason-img {
+  float: left;
 }
 
 .features > div {
@@ -79,31 +120,18 @@ h2, h3, .main-title {
   height: 330px;
 }
 
-.second-reason-img {
-  float: left;
-  width: 800px;
-  height: 255px;
-}
-
-.second-reason-with-img {
-  float: right;
-  width: 400px;
-  height: 255px;
-}
-
 .reason {
   float: left;
   width: 400px;
   height: 255px;
-}
+}*/
 
-.subtitle:nth-child(2) {
-  margin-bottom: 0;
+.search {
+  position: relative;
 }
 
 .modal-header {
   width: 570px;
-  height: 85px;
   margin: 50px auto 0;
   text-align: center;
   background-color: #766357;
@@ -111,11 +139,9 @@ h2, h3, .main-title {
 }
 
 .search-form {
-  box-sizing: border-box;
   width: 570px;
-  height: 395px;
   position: absolute;
-  left: 507px;
+  left: 315px;
   background-color: #ffffff;
   padding: 55px;
 }
@@ -130,7 +156,18 @@ h2, h3, .main-title {
   /*position: absolute;*/
 }
 
-.footer-hashtag {
+.main-footer section,
+.footer-copyright a,
+.footer-copyright p {
+  display: inline-block;
+}
+
+.main-footer section {
+  width: 33%;
+  text-align: center;
+}
+
+/*.footer-hashtag {
   float: left;
   width: 240px;
   margin-top: 50px;
@@ -154,7 +191,7 @@ h2, h3, .main-title {
 
 .footer-copyright > a {
   float: right;
-}
+}*/
 
 .hotels-form {
   padding: 30px 0;
