@@ -7,6 +7,7 @@
   </head>
   <body>
     <header class="main-header">
+      <div class="container-hotels">
         <nav class="main-navigation">
           <a href="index.html"><img src="img/logo.png" alt="Логотип Седоны"></a>
           <ul>
@@ -16,8 +17,9 @@
             <li><a>Гостиницы</a></li>
           </ul>
         </nav>
+      </div>
     </header>
-    <main>
+    <main class="container-hotels">
       <form class="clearfix hotels-form" action="#" method="get">
         <fieldset class="amenities">
           <legend class="title-secondary">Инфраструктура:</legend>
@@ -48,7 +50,7 @@
             <span name="cost-min"></span>
             <span name="cost-max"></span>
             <input type="range" name="range" min="0" max="5000" value="3000">
-            <button type="submit" class="btn">Показать</button>
+            <button type="submit" class="btn-hotels">Показать</button>
           </fieldset>
         </form>
         <div class="sorters">
@@ -68,6 +70,7 @@
               </td>
               <td class="hotel-content">
                 <h3>Amara Resort &amp; SPA</h3>
+                <span class="hotel-type">Гостиница</span><span class="hotel-price">От 3500 р.</span>
                 <button class="more">Подробнее</button><button class="book">Забронировать</button>
               </td>
               <td class="ratings">
@@ -80,6 +83,7 @@
               </td>
               <td class="hotel-content">
                 <h3>Desert Quail Inn</h3>
+                <span class="hotel-type">Мотель</span><span class="hotel-price">От 2000 р.</span>                
                 <button class="more">Подробнее</button><button class="book">Забронировать</button>
               </td>
               <td class="ratings">
@@ -92,6 +96,7 @@
               </td>
               <td class="hotel-content">
                 <h3>Villas At Poco Diablo</h3>
+                <span class="hotel-type">Апартаменты</span><span class="hotel-price">От 4000 р.</span>
                 <button class="more">Подробнее</button><button class="book">Забронировать</button>
               </td>
               <td class="ratings">
@@ -102,9 +107,9 @@
         </table>
     </main>
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <section class="footer-hashtag">
-          #visitSEDONA
+          <b>#visitSEDONA</b>
         </section>
         <section class="footer-social">
           <a href="#"><img src="img/tw.jpg" width="46" height="48" alt="Twitter"></a>
