@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Поиск отелей в Седоне</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <div class="container-hotels">
+      <div class="container">
         <nav class="main-navigation">
-          <a href="index.html"><img src="img/logo.png" alt="Логотип Седоны"></a>
-          <ul>
+          <a href="index.html"><img class="logo" src="img/logo.png" alt="Логотип Седоны"></a>
+          <ul class="clearfix">
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
             <li><a href="#">Карта штата</a></li>
@@ -51,20 +52,21 @@
               <span class="price-range-item">От <ins id="cost-min">0</ins></span>
               <span class="price-range-item">До <ins id="cost-max">3000</ins></span>
             </div>
-            <!-- <span name="cost-min"></span>
-            <span name="cost-max"></span>
-            <input type="range" name="range" min="0" max="5000" value="3000"> -->
           </fieldset>
           <button type="submit" class="btn-hotels">Показать</button>
         </form>
-        <div class="sorters">
-          <b>Найдено: 3</b>
-          <span>Сортировка:</span>
-          <button class="sorter" id="price-sorter">По цене</button>
-          <button class="sorter" id="type-sorter">По типу</button>
-          <button class="sorter" id="rating-sorter">По рейтингу</button>
-          <button class="sorter" id="up-sorter">▲</button>
-          <button class="sorter" id="down-sorter">▼</button>
+        <div class="sorters clearfix">
+          <div class="sorters-left">
+            <b class="sorters-results">Найдено: 3</b>
+            <span class="sorters-type">Сортировка:</span>
+            <button class="sorter" id="price-sorter">По цене</button>
+            <button class="sorter" id="type-sorter">По типу</button>
+            <button class="sorter" id="rating-sorter">По рейтингу</button>
+          </div>
+          <div class="sorters-right">
+            <button class="sorter arr" id="up-sorter">▲</button>
+            <button class="sorter arr" id="down-sorter">▼</button>
+          </div>
         </div>
         <table class="search-results">
           <tbody>
@@ -73,14 +75,19 @@
                 <img src="img/hotel-1.jpg" width="135" height="90" alt="Amara Resort &amp; SPA">
               </td>
               <td class="hotel-content">
-                <h3>Amara Resort &amp; SPA</h3>
-                <span class="hotel-type">Гостиница</span>
-                <span class="hotel-price">От 3500 р.</span>
-                <button class="more">Подробнее</button>
-                <button class="book">Забронировать</button>
+                <h3 class="hotel-title">Amara Resort &amp; SPA</h3>
+                <div class="hotel-info">
+                  <span class="hotel-type">Гостиница</span>
+                  <span class="hotel-price">От 3500 р.</span>
+                </div>
+                <div class="hotel-btns">
+                  <button class="more">Подробнее</button>
+                  <button class="book">Забронировать</button>
+                </div>
               </td>
               <td class="ratings">
-                Рейтинг: 8,5<br> ★★★★
+                <div class="stars">★★★★</div>
+                <div class="rating">Рейтинг: 8,5</div>
               </td>
             </tr>
             <tr class="hotel-row">
@@ -88,14 +95,19 @@
                 <img src="img/hotel-2.jpg" width="135" height="90" alt="Desert Quail Inn">
               </td>
               <td class="hotel-content">
-                <h3>Desert Quail Inn</h3>
-                <span class="hotel-type">Мотель</span>
-                <span class="hotel-price">От 2000 р.</span>                
-                <button class="more">Подробнее</button>
-                <button class="book">Забронировать</button>
+                <h3 class="hotel-title">Desert Quail Inn</h3>
+                <div class="hotel-info">
+                  <span class= "hotel-type">Мотель</span>
+                  <span class="hotel-price">От 2000 р.</span>
+                </div>
+                <div class="hotel-btns">                
+                  <button class="more">Подробнее</button>
+                  <button class="book">Забронировать</button>
+                </div>
               </td>
               <td class="ratings">
-                Рейтинг: 8,9<br> ★★
+                <div class="stars">★★</div>
+                <div class="rating">Рейтинг: 8,9</div>
               </td>
             </tr>
             <tr class="hotel-row">
@@ -103,21 +115,26 @@
                 <img src="img/hotel-3.jpg" width="135" height="90" alt="Villas At Poco Diablo">
               </td>
               <td class="hotel-content">
-                <h3>Villas At Poco Diablo</h3>
-                <span class="hotel-type">Апартаменты</span>
-                <span class="hotel-price">От 4000 р.</span>
-                <button class="more">Подробнее</button>
-                <button class="book">Забронировать</button>
+                <h3 class="hotel-title">Villas At Poco Diablo</h3>
+                <div class="hotel-info">
+                  <span class="hotel-type">Апартаменты</span>
+                  <span class="hotel-price">От 4000 р.</span>
+                </div>
+                <div class="hotel-btns">
+                  <button class="more">Подробнее</button>
+                  <button class="book">Забронировать</button>
+                </div>
               </td>
               <td class="ratings">
-                Рейтинг: 9,2<br> ★★★
+                <div class="stars">★★★</div>
+                <div class="rating">Рейтинг: 9,2</div>
               </td>
             </tr>
           </tbody>
         </table>
     </main>
     <footer class="main-footer">
-      <div class="container clearfix">
+      <div class="container">
         <section class="footer-hashtag">
           <b>#visitSEDONA</b>
         </section>
