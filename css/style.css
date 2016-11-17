@@ -51,7 +51,7 @@ button {
 }
 
 .main-navigation .logo,
-.main-navigation.main-hotels a {
+.main-navigation.main-hotels > a {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -215,10 +215,6 @@ button {
   width: 330px;
 }
 
-.filter {
-  display: block;
-}
-
 .sorters {
   padding: 15px 0;
 }
@@ -319,8 +315,7 @@ td {                               /*удалить*/
   display: inline-block;
 }
 
-.main-footer-index,
-.main-footer-hotels {
+.main-footer-index {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -330,4 +325,12 @@ td {                               /*удалить*/
 .main-footer-index {
   height: 120px;
   background-color: rgba(255, 255, 255, 0.9);
+}
+
+.ratings {
+  text-align: right;
+}
+
+.filter-label {
+  display: block;
 }
