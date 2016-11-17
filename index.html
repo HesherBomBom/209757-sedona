@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/vendor/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -120,24 +120,28 @@
           </div>
           <button type="submit " class="btn ">Найти</button>
         </form>
-        <img src="img/map.jpg" width="1200" height="593" alt="Карта">
+        <div class="map-footer">
+          <img src="img/map.jpg" width="1200" height="593" alt="Карта">
+          <footer class="main-footer main-footer-index">
+            <div class="container">
+              <section class="footer-hashtag">
+              <b>#visitSEDONA</b>
+              </section>
+              <section class="footer-social">
+                <a href="#"><img src="img/tw.jpg" width="46" height="48" alt="Twitter"></a>
+                <a href="#"><img src="img/fb.jpg" width="46" height="48" alt="Facebook"></a>
+                <a href="#"><img src="img/yt.jpg" width="46" height="48" alt="YouTube"></a>
+              </section>
+              <section class="footer-copyright">
+                <p>Website by</p>
+                <a href="https://htmlacademy.ru">
+                  <img src="img/html-logo.png" width="113" height="39" alt="Логотип HTML Academy">
+                </a>
+              </section>
+            </div>
+          </footer>
+        </div>
       </div>
     </main>
-    <footer class="main-footer">
-      <div class="container">
-        <section class="footer-hashtag">
-          <b>#visitSEDONA</b>
-        </section>
-        <section class="footer-social">
-          <a href="#"><img src="img/tw.jpg" width="46" height="48" alt="Twitter"></a>
-          <a href="#"><img src="img/fb.jpg" width="46" height="48" alt="Facebook"></a>
-          <a href="#"><img src="img/yt.jpg" width="46" height="48" alt="YouTube"></a>
-        </section>
-        <section class="footer-copyright">
-          <p>Website by</p>
-          <a href="https://htmlacademy.ru"><img src="img/html-logo.png" width="113" height="39" alt="Логотип HTML Academy"></a>
-        </section>
-      </div>
-    </footer>
   </body>
 </html>

@@ -3,19 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>Поиск отелей в Седоне</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/vendor/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <div class="container">
-        <nav class="main-navigation">
+        <nav class="main-navigation main-navigation-hotels">
           <a href="index.html"><img class="logo" src="img/logo.png" alt="Логотип Седоны"></a>
           <ul class="clearfix">
             <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
-            <li><a href="#">Карта штата</a></li>
             <li><a>Гостиницы</a></li>
+            <li><a href="#">Карта штата</a></li>
           </ul>
         </nav>
       </div>
@@ -52,8 +52,8 @@
               <span class="price-range-item">От <ins id="cost-min">0</ins></span>
               <span class="price-range-item">До <ins id="cost-max">3000</ins></span>
             </div>
+            <button class="btn-hotels type="submit"">Показать</button>
           </fieldset>
-          <button type="submit" class="btn-hotels">Показать</button>
         </form>
         <div class="sorters clearfix">
           <div class="sorters-left">
@@ -133,7 +133,7 @@
           </tbody>
         </table>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer main-footer-hotels">
       <div class="container">
         <section class="footer-hashtag">
           <b>#visitSEDONA</b>

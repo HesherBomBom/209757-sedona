@@ -16,6 +16,15 @@ h2, h3, .main-title {
   line-height: 1.2381em;
 }
 
+ul {
+  margin: 0;
+}
+
+button {
+  text-transform: inherit;
+  font-family: inherit;
+}
+
 .clearfix::after {
   content: "";
   display: table;
@@ -41,7 +50,8 @@ h2, h3, .main-title {
   text-align: right;
 }
 
-.logo {
+.main-navigation .logo,
+.main-navigation.main-hotels a {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -126,7 +136,7 @@ h2, h3, .main-title {
 
 .reason-title {
   outline: 1px dotted red;
-  margin: 0 85px 25px;
+  margin: 0 70px 25px;
 }
 
 .feature-img {
@@ -151,7 +161,8 @@ h2, h3, .main-title {
   text-align: center;
   background-color: #766357;
   color: white;
-  padding: 30px 140px;
+  padding: 30px 130px;
+  font-size: 21px;
 }
 
 .search-form {
@@ -169,6 +180,7 @@ h2, h3, .main-title {
 
 .main-footer {
   height: 120px;
+  padding: 35px 0;
   /*position: absolute;*/
 }
 
@@ -176,6 +188,7 @@ h2, h3, .main-title {
 .footer-copyright a,
 .footer-copyright p {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .main-footer section {
@@ -294,6 +307,27 @@ h2, h3, .main-title {
   width: 142px;
 }
 
-td {
+td {                               /*удалить*/
   outline: 1px dotted red;
+}
+
+.price-range {
+  text-align: center;
+}
+
+.btn-hotels {
+  display: inline-block;
+}
+
+.main-footer-index,
+.main-footer-hotels {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.main-footer-index {
+  height: 120px;
+  background-color: rgba(255, 255, 255, 0.9);
 }
