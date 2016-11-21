@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -6,7 +8,7 @@ body {
   font-family: "PT Sans", Tahoma, sans-serif;
   text-transform: uppercase;
   font-size: 14px;
-  line-height: 1.7142em;
+  line-height: 1.7142;
   padding: 0;
   margin: 0;
   background-color: #f2f2f2;
@@ -90,7 +92,6 @@ input[type='number'] {
 }
 
 .main-navigation {
-  background-color: #fff;
   padding: 15px 0;
 }
 
@@ -111,10 +112,10 @@ input[type='number'] {
 }
 
 .main-navigation a {
-  color: #000;
+  color: inherit;
   text-decoration: none;
   display: block;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .main-navigation .logo,
@@ -138,7 +139,7 @@ input[type='number'] {
 }
 
 .intro {
-  background: url("../img/bacground-index-2.jpg") no-repeat 0 -56px;
+  background: #dceaf3 url("../img/bacground-index-2.jpg") no-repeat 0 -56px;
   padding: 75px 0 74px;
   margin-bottom: 60px;
 }
@@ -204,8 +205,8 @@ input[type='number'] {
 }
 
 .reason {
-  padding: 59px 35px 24px;
-  background-color: #eeeeee;
+  padding: 40px 35px 24px;
+  background-color: #eee;
 }
 
 .reason-blue {
@@ -233,7 +234,7 @@ input[type='number'] {
   color: white;
   padding: 30px 130px;
   font-size: 21px;
-  font-weight: bold;
+  font-weight: 700;
   border: none;
   text-decoration: none;
 }
@@ -242,9 +243,9 @@ input[type='number'] {
   width: 570px;
   position: absolute;
   left: 315px;
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 55px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .to-left {
@@ -312,7 +313,7 @@ input[type='number'] {
   border: none;
   background-color: #f2f2f2;
   width: 340px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -354,7 +355,7 @@ input[type='number'] {
   background-color: #81b3d2;
   padding: 16px 0;
   border: none;
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: none;
 }
 
