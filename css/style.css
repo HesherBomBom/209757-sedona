@@ -10,7 +10,7 @@ body {
   font-size: 14px;
   line-height: 1.7142;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   background-color: #f2f2f2;
 }
 
@@ -26,6 +26,20 @@ ul {
 button {
   text-transform: inherit;
   font-family: inherit;
+}
+
+legend {
+  color: #fff;
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin-right: 12px;
 }
 
 @font-face {
@@ -118,6 +132,26 @@ input[type='number'] {
   font-weight: 700;
 }
 
+.main-navigation a:hover {
+  color: #81b3d2;
+}
+
+.main-navigation a:active {
+  color: #b2b2b2;
+}
+
+.main-navigation .active {
+  color: #766357;
+}
+
+.main-navigation .active:hover {
+  color: #604e43;
+}
+
+.main-navigation .active:active {
+  color: #d6d0cc;
+}
+
 .main-navigation .logo,
 .main-navigation.main-navigation-hotels > a {
   position: absolute;
@@ -130,8 +164,6 @@ input[type='number'] {
   width: 1200px;
   margin: 0 auto;
   background-color: #fff;
-
-  /*box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);*/
   box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 }
 
@@ -161,7 +193,7 @@ input[type='number'] {
 }
 
 .search .subtitle {
-  width: 396px;
+  width: 500px;
 }
 
 .reasons {
@@ -209,7 +241,8 @@ input[type='number'] {
 }
 
 .reason-title {
-  margin: 0 70px 25px;
+  margin: 0 0 25px;
+  padding: 0 75px;
 }
 
 .feature-img {
@@ -217,7 +250,7 @@ input[type='number'] {
 }
 
 .reason {
-  padding: 55px 50px 37px;
+  padding: 55px 45px 37px;
   background-color: #eee;
 }
 
@@ -252,6 +285,10 @@ input[type='number'] {
   margin: 0 4px;
 }
 
+section:nth-child(n+4) .reason {
+  padding: 45px 60px 47px;
+}
+
 .search {
   position: relative;
 }
@@ -280,7 +317,7 @@ input[type='number'] {
   background-color: #fff;
   padding: 55px;
   font-weight: 700;
-  box-shadow: 
+  box-shadow: 0 0 40px rgba(0,0,0,0.3);
 }
 
 .to-left {
@@ -466,7 +503,9 @@ input[type='number'] {
 }
 
 .hotels-form {
-  padding: 30px 0;
+  padding: 27px 0 5px;
+  background: #6b98c1;
+  margin-bottom: 11px;
 }
 
 .amenities {
@@ -484,6 +523,34 @@ input[type='number'] {
   width: 330px;
 }
 
+.filter {
+  display: none;
+}
+
+.filter-label {
+  line-height: 21px;
+  font-size: 14px;
+  color: #fff;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+.filter + .filter-label::before {
+  content: "\2610";
+  font-family: "symbols-sedona";
+  display: inline-block;
+  vertical-align: top;
+  font-size: 26px;
+  margin-right: 19px;
+}
+
+.filter:checked + .filter-label::before {
+  content: "\2611";
+  margin-right: 15px;
+}
+
 .sorters {
   padding: 15px 0;
 }
@@ -494,9 +561,34 @@ input[type='number'] {
   background: none;
 }
 
+.sorter:not(.arr) {
+  color: #b7b7b7;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sorter:not(.arr):hover {
+  color: #81b3d2;
+  cursor: pointer;
+}
+
+.sorter:not(.arr):active {
+  color: #000;
+  border: none;
+}
+
+.sorter.btn-active {
+  color: #81b3d2;
+  border: none;
+}
+
+.sorter.btn-active:hover {
+  cursor: default;
+}
+
 .sorters-left {
   float: left;
   font-size: 0;
+  vertical-align: baseline;
 }
 
 .sorters-right {
@@ -504,7 +596,7 @@ input[type='number'] {
 }
 
 .sorters-results {
-  padding-right: 50px;
+  margin-right: 48px;
   font-size: 21px;
 }
 
@@ -512,29 +604,41 @@ input[type='number'] {
 .sorter:not(.arr) {
   font-size: 12px;
   text-transform: uppercase;
-  padding-right: 40px;
+  margin-right: 40px;
+}
+
+.sorter:not(.arr) {
+  margin-right: 33px;
 }
 
 .sorter:last-child {
-  padding-right: 0;
+  margin-right: 0;
+}
+
+.sorter.arr {
+  color: #b7b7b7;
+}
+
+.sorter.arr-active {
+  color: #81b3d2;
 }
 
 .sorter.arr:first-child {
-  padding-right: 10px;
+  margin-right: 10px;
 }
 
 .sorters-results,
 .sorters-type,
 .sorter {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: baseline;
 }
 
 .search-results {
   width: 1055px;
 }
 
-.hotel-row td {
+.hotel-row {
   padding: 30px 0;
 }
 
@@ -543,7 +647,8 @@ input[type='number'] {
 }
 
 .hotel-title {
-  margin: 0 0 12px;
+  margin: 0 0 6px;
+  line-height: 26px;
 }
 
 .hotel-content {
@@ -551,7 +656,7 @@ input[type='number'] {
 }
 
 .hotel-info {
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 }
 
 .hotel-type,
@@ -570,6 +675,32 @@ input[type='number'] {
 .hotel-price,
 .book {
   width: 142px;
+}
+
+.hotel-btns button {
+  padding: 5px 16px;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+}
+
+.more {
+  background-color: #81b3d2;
+}
+
+.book {
+  background-color: #766357;
+}
+
+.stars {
+  color: #81b3d2;
+  font-size: 21px;
+}
+
+.rating {
+  width: 110px;
+  background-color: #f2f2f2;
+  padding: 3px 11px;
 }
 
 .price-range {
@@ -600,4 +731,122 @@ input[type='number'] {
 
 .filter-label {
   display: block;
+}
+
+.filter-range {
+  float: right;
+  width: 330px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #fff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #fff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 163px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0 5px;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #fff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -8px;
+  width: 18px;
+  height: 18px;
+  background: #ababab;
+  border: 7px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000;
+  background: #fff;
 }
