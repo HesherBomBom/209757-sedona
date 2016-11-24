@@ -44,8 +44,8 @@
             <input class="filter" type="checkbox" name="hotel" id="motel" checked>
             <label class="filter-label" for="motel">Мотель</label>
 
-            <input class="filter" type="checkbox" name="apartments" id="apartments" checked>
-            <label class="filter-label" for="apartments">Апартаменты</label>
+            <input class="filter" type="checkbox" name="apartments" id="apartments" checked disabled>
+            <label class="filter-label" for="apartments" disabled>Апартаменты</label>
           </fieldset>
           <div class="filter-range">
             <div class="filter-range-title">Стоимость в сутки (р):</div>
@@ -83,19 +83,19 @@
                 <img src="img/hotel-1.jpg" width="135" height="90" alt="Amara Resort &amp; SPA">
               </td>
               <td class="hotel-content">
-                <h3 class="hotel-title">Amara Resort &amp; SPA</h3>
+                <a class="hotel-title" href="#">Amara Resort &amp; SPA</a>
                 <div class="hotel-info">
                   <span class="hotel-type">Гостиница</span>
                   <span class="hotel-price">От 3500 р.</span>
                 </div>
                 <div class="hotel-btns">
-                  <button class="more">Подробнее</button>
-                  <button class="book">Забронировать</button>
+                  <a class="more" href="#">Подробнее</a>
+                  <a class="book" href="#">Забронировать</a>
                 </div>
               </td>
               <td class="ratings">
                 <div class="stars">★★★★</div>
-                <div class="rating">Рейтинг: 8,5</div>
+                <mark class="rating">Рейтинг: 8,5</mark>
               </td>
             </tr>
             <tr class="hotel-row">
@@ -103,19 +103,19 @@
                 <img src="img/hotel-2.jpg" width="135" height="90" alt="Desert Quail Inn">
               </td>
               <td class="hotel-content">
-                <h3 class="hotel-title">Desert Quail Inn</h3>
+                <a class="hotel-title" href="#">Desert Quail Inn</a>
                 <div class="hotel-info">
                   <span class= "hotel-type">Мотель</span>
                   <span class="hotel-price">От 2000 р.</span>
                 </div>
                 <div class="hotel-btns">                
-                  <button class="more">Подробнее</button>
-                  <button class="book">Забронировать</button>
+                  <a class="more" href="#">Подробнее</a>
+                  <a class="book" href="#">Забронировать</a>
                 </div>
               </td>
               <td class="ratings">
                 <div class="stars">★★</div>
-                <div class="rating">Рейтинг: 8,9</div>
+                <mark class="rating">Рейтинг: 8,9</mark>
               </td>
             </tr>
             <tr class="hotel-row">
@@ -123,19 +123,19 @@
                 <img src="img/hotel-3.jpg" width="135" height="90" alt="Villas At Poco Diablo">
               </td>
               <td class="hotel-content">
-                <h3 class="hotel-title">Villas At Poco Diablo</h3>
+                <a class="hotel-title" href="#">Villas At Poco Diablo</a>
                 <div class="hotel-info">
                   <span class="hotel-type">Апартаменты</span>
                   <span class="hotel-price">От 4000 р.</span>
                 </div>
                 <div class="hotel-btns">
-                  <button class="more">Подробнее</button>
-                  <button class="book">Забронировать</button>
+                  <a class="more" href="#">Подробнее</a>
+                  <a class="book" href="#">Забронировать</a>
                 </div>
               </td>
               <td class="ratings">
                 <div class="stars">★★★</div>
-                <div class="rating">Рейтинг: 9,2</div>
+                <mark class="rating">Рейтинг: 9,2</mark>
               </td>
             </tr>
           </tbody>
@@ -152,7 +152,7 @@
        </section>
        <section class="footer-copyright">
          <p>Website by</p>
-         <a href="https://htmlacademy.ru"><img src="img/html-logo.png" width="113" height="39" alt="Логотип HTML Academy"></a>
+         <a href="https://htmlacademy.ru"><i class="sprite-html-logo"></i></a>
        </section>
     </footer>
   </body>
