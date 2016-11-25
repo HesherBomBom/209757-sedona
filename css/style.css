@@ -169,7 +169,7 @@ input[type='number'] {
 .container-hotels {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 73px;
+  /*padding: 0 73px;*/
 }
 
 .intro {
@@ -502,8 +502,8 @@ section:nth-child(n+4) .reason {
 }
 
 .hotels-form {
-  padding: 27px 0 5px;
-  background: #6b98c1;
+  padding: 27px 73px 5px;
+  background: #6b98c1 url("../img/background-hotels.jpg") no-repeat 0 -60px;
   margin-bottom: 11px;
 }
 
@@ -557,8 +557,9 @@ section:nth-child(n+4) .reason {
 }
 
 .sorters {
+  margin: 0 79px 11px;
   padding: 15px 0;
-  margin-bottom: 39px;
+  /*margin-bottom: 39px;*/
 }
 
 .sorter {
@@ -668,6 +669,7 @@ section:nth-child(n+4) .reason {
 
 .hotel-pic {
   width: 165px;
+  padding-left: 73px;
 }
 
 .hotel-title {
@@ -687,8 +689,8 @@ section:nth-child(n+4) .reason {
   color: #cacaca;
 }
 
-.hotel-content {                      /**/
-  
+.hotel-content {                      
+  padding-left: 29px;
 }
 
 .hotel-info {
@@ -784,6 +786,7 @@ section:nth-child(n+4) .reason {
 
 .ratings {
   text-align: right;
+  padding-right: 73px;
 }
 
 .filter-label {
